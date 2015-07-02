@@ -1,0 +1,36 @@
+<h1>New Item</h1>
+<%= form_for :item, url: items_path do |f| %>
+    <p>
+      <%= f.label :name %><br>
+      <%= f.text_field :name %>
+    </p>
+
+    <p>
+      <%= f.label :description %><br>
+      <%= f.text_area :description %>
+    </p>
+    <p>
+      <%= f.label :price %><br>
+      <%= f.text_field :price %>
+    </p>
+    <p>
+      <%= f.label :quantity %><br>
+      <%= f.text_field :quantity %>
+    </p>
+    <p>
+      <%= f.label :minquantity %><br>
+      <%= f.text_field :minquantity %>
+    </p>
+    <p>
+      <%= f.label :maxquantity %><br>
+      <%= f.text_field :maxquantity %>
+    </p>
+    <p>
+      <%= f.label :reorderlevel %><br>
+      <%= f.text_field :reorderlevel%>
+    </p>
+
+    <p>
+      <%= f.submit %>
+    </p>
+<% end %>
