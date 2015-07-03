@@ -1,4 +1,4 @@
-# inventory Project
+# Inventory test project
 
 Inventory management system using ROR
 
