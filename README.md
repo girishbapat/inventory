@@ -16,6 +16,9 @@ Use postgres/postgres as username password while installation. <br>
 2.2 Once installed, use Pg Admin III client to connect to postgresql server instance  <br>
 2.3 create database inventory_development <br> <br>
 
+<b> Note: If you already have postgres installed on your system and with different configurations,<br> 
+you need to update inventory/config/database.yml accordingly </b>
+
 <h3> 3. Update your gem bundles by executing following</h3> <br>
 bundle install <br> <br>
 
