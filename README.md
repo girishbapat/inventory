@@ -14,8 +14,7 @@ Currently we are using postgresql database for building project <br>
 Install it on default port 5432 <br>
 Use postgres/postgres as username password while installation. <br>
 2.2 Once installed, use Pg Admin III client to connect to postgresql server instance  <br>
-2.3 create database inventory_development <br> <br>
-
+2.3 create database inventory_development <br>
 <b> Note: If you already have postgres installed on your system and with different configurations,<br> 
 you need to update inventory/config/database.yml accordingly </b>
 
