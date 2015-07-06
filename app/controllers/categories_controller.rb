@@ -1,6 +1,7 @@
 class CategoriesController < ApplicationController
   def index
-    @categories = Category.all
+    #@categories = Category.all
+    @categories = Category.where('name LIKE ?', "%#{params[:search]}%" ).paginate(:per_page => 10, :page => params[:page])
   end
 
   def create
