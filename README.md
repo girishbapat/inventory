@@ -23,3 +23,7 @@ bundle install <br> <br>
 
 <h3>4. To update your schema execute following command </h3><br>
 rake db:migrate <br>
+
+<h3>5. Import project in ruby mine</h3><br>
+Open Ruby mine <br>
+File --> open ...--> point to project dirctory--> click Ok
