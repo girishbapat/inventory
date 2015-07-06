@@ -18,4 +18,4 @@
 
 # Ignoring all .ide files
 /.idea
-/Gemfile.lock
+/*.lock
