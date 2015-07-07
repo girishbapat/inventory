@@ -26,4 +26,4 @@ rake db:migrate <br>
 
 <h3>5. Import project in ruby mine</h3><br>
 Open Ruby mine <br>
-File --> open ...--> point to project dirctory--> click Ok
+File --> open ...--> point to project directory--> click Ok
