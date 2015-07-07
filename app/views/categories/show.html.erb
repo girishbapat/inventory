@@ -10,4 +10,22 @@
 </p>
 
 <%= link_to 'Edit', edit_category_path(@category) %> |
-<%= link_to 'Back', root_path %>
+<%= link_to 'Back', root_path %>|
+<%= link_to 'Add Item', new_category_item_path(@category) %>
+
+<table border="1" class="pretty">
+<tr align="center">
+  <th>Name</th><th>Description</th><th>Unit Price</th><th>Quantity</th><th>Min Quantity</th>
+  <th>Max Quantity</th><th>Image</th><th>SKU</th><th>Status</th><th colspan="2">actions</th>
+</tr>
+<% @category.items.each do |item| %>
+    <tr>
+      <td><%= item.name %></td><td><%= item.desc %></td><td><%= item.unitPrice%></td><td><%= item.quantity%></td>
+      <td><%= item.minQty%></td><td><%= item.maxQty %></td><td><%= item.image %></td><td><%= item.sku %></td>
+      <td><%= item.status %></td>
+      <td><%= link_to 'Show', category_item_path(@category,item.id) %></td>
+      <td><%= link_to 'Edit', edit_category_item_path(@category,item.id) %></td>
+
+    </tr>
+<% end %>
+</table>
