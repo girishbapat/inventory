@@ -39,8 +39,11 @@
       <%= f.file_field :image%>
     </p>
     <p>
-      <%= f.label :status %><br>
-      <%= f.text_area :status%>
+      <%= f.label :Status %><br>
+      <%= f.radio_button :status, true, :value => true %>
+      <%= label :continue, 'Continue' %>
+      <%= f.radio_button :status, false, :value => false %>
+      <%= label :continue, 'Discontinue' %>
     </p>
 
     <p>
