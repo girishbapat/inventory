@@ -36,6 +36,14 @@ class ItemsController < ApplicationController
         render 'edit'
       end
   end
+
+  def destroy
+    @category = Category.find(params[:category_id])
+    @item = @category.items.find(params[:id])
+    @item.destroy
+
+    redirect_to  category_path(@category)
+  end
   private
     def item_params
       params.require(:item).permit(:name,:desc,:unitPrice, :quantity, :minQty, :maxQty, :sku,:image,:status,:category_id )

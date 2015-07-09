@@ -20,7 +20,7 @@
     <table border="1" class="pretty">
       <tr align="center">
         <th>Name</th><th>Description</th><th>Unit Price</th><th>Quantity</th><th>Min Quantity</th>
-        <th>Max Quantity</th><th>Image</th><th>SKU</th><th>Status</th><th colspan="2">actions</th>
+        <th>Max Quantity</th><th>Image</th><th>SKU</th><th>Status</th><th colspan="3">actions</th>
       </tr>
       <% @items.each do |item| %>
           <tr>
@@ -29,6 +29,9 @@
             <td><%= item.status %></td>
             <td><%= link_to 'Show', category_item_path(@category,item.id) %></td>
             <td><%= link_to 'Edit', edit_category_item_path(@category,item.id) %></td>
+            <td><%= link_to 'Delete', category_item_path(@category,item.id),
+                            method: :delete,
+                            data: { confirm: 'Are you sure?' } %></td>
 
           </tr>
       <% end %>
