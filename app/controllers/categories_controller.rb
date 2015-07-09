@@ -24,6 +24,7 @@ class CategoriesController < ApplicationController
 
   def show
     @category=Category.find(params[:id])
+    @items = @category.items.where('name LIKE ?', "%#{params[:search]}%" ).paginate(:per_page => 10, :page => params[:page])
   end
 
   def update
