@@ -1,0 +1,53 @@
+<p>
+  <strong>Category Name:</strong>
+  <%= @category.name %><br>
+</p>
+<hr>
+<p>
+  <strong>Name:</strong>
+  <%= @item.name %><br>
+</p>
+
+
+<p>
+  <strong>Description</strong>
+  <%= @item.desc %><br>
+</p>
+
+<p>
+  <strong>Quantity</strong>
+  <%= @item.quantity %><br>
+</p>
+
+<p>
+  <strong>Unit Price</strong>
+  <%= @item.unitPrice%><br>
+</p>
+
+
+
+<p>
+  <strong>Min Quantity</strong>
+  <%= @item.minQty%><br>
+</p>
+
+<p>
+  <strong>Max Quantity</strong>
+  <%= @item.maxQty %><br>
+</p>
+
+<p>
+  <strong>SKU</strong>
+  <%= @item.sku%><br>
+</p>
+
+
+<p>
+  <strong>Image</strong>
+  <%=image_tag(@item.image, alt: "Example Image")%>
+</p>
+
+<p>
+  <strong>Status</strong>
+  <%= @item.status%><br>
+</p>

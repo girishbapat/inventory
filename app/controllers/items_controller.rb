@@ -8,6 +8,7 @@ class ItemsController < ApplicationController
     @item =Item.find(params[:id])
   end
   def show
+    @category=Category.find(params[:category_id])
     @item = Item.find(params[:id])
   end
   def index
