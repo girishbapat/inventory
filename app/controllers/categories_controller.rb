@@ -42,6 +42,14 @@ class CategoriesController < ApplicationController
     redirect_to categories_path
   end
 
+  def reports
+    logger.debug "--------In reports action"
+  end
+
+  def reportnew
+    logger.debug "%%%%%%%%%%%%%%%%%%%%%%%In reports action"
+  end
+
   private
   def category_params
     params.require(:category).permit(:name, :desc)

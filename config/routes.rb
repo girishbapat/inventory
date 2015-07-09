@@ -15,7 +15,13 @@ Rails.application.routes.draw do
 
   get 'welcome/index'
 
+  #get 'reports/index'
+  # match 'reports/generate/:id',:action => 'generate', :via => [:get], :controller => 'reports'
+
+  resources :reports
   resources :categories do
+    #get 'reports', :on => :member
+    #get 'reportnew', :on => :collection
     resources :items
   end
   root 'welcome#index'
