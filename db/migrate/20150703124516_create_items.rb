@@ -8,7 +8,6 @@ class CreateItems < ActiveRecord::Migration
       t.integer :minQty
       t.integer :maxQty
       t.string :sku
-      t.binary :image
       t.boolean :status
       t.references :category, index: true, foreign_key: true
 

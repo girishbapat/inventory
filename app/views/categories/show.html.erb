@@ -25,7 +25,7 @@
       <% @items.each do |item| %>
           <tr>
             <td><%= item.name %></td><td><%= item.desc %></td><td><%= item.unitPrice%></td><td><%= item.quantity%></td>
-            <td><%= item.minQty%></td><td><%= item.maxQty %></td><td><%= item.image %></td><td><%= item.sku %></td>
+            <td><%= item.minQty%></td><td><%= item.maxQty %></td><td><%= item.sku %></td>
             <td><%= item.status %></td>
             <td><%= link_to 'Show', category_item_path(@category,item.id) %></td>
             <td><%= link_to 'Edit', edit_category_item_path(@category,item.id) %></td>

@@ -1,54 +1,61 @@
+<hrml>
+  <head>
+
+  </head>
+  <body>
 <p>
   <strong>Category Name:</strong>
   <%= @category.name %><br>
 </p>
 <hr>
-<p>
-  <strong>Name:</strong>
-  <%= @item.name %><br>
-</p>
 
+<table border="1" >
+  <thead >
+    <tr>
+      <td ><%=image_tag @item.photo.url, size:'200' %>
+      </td>
+      <td>
+        <table border="1" class="table table-hover">
+          <tr>
+            <th>Name</th>
+            <td><%= @item.name %></td>
+          </tr>
+          <tr>
+            <th>Description</th>
+            <td> <%= @item.desc %></td>
+          </tr>
+          <tr>
+            <th>Quantity</th>
+            <td>  <%= @item.quantity %></td>
+          </tr>
+          <tr>
+            <th>Unit Price</th>
+            <td><%= @item.unitPrice%></td>
+          </tr>
+          <tr>
+            <th>Minimum Quantity</th>
+            <td> <%= @item.minQty%></td>
+          </tr>
+          <tr>
+            <th>Maximum Quantity</th>
+            <td><%= @item.maxQty %></td>
+          </tr>
+          <tr>
+            <th>S.K.U</th>
+            <td><%= @item.sku%></td>
+          </tr>
+          <tr>
+            <th>Status</th>
+            <td><%= @item.status%></td>
+          </tr>
 
-<p>
-  <strong>Description</strong>
-  <%= @item.desc %><br>
-</p>
+        </table>
 
-<p>
-  <strong>Quantity</strong>
-  <%= @item.quantity %><br>
-</p>
+      </td>
+    </tr>
+  </thead>
+</table>
 
-<p>
-  <strong>Unit Price</strong>
-  <%= @item.unitPrice%><br>
-</p>
-
-
-
-<p>
-  <strong>Min Quantity</strong>
-  <%= @item.minQty%><br>
-</p>
-
-<p>
-  <strong>Max Quantity</strong>
-  <%= @item.maxQty %><br>
-</p>
-
-<p>
-  <strong>SKU</strong>
-  <%= @item.sku%><br>
-</p>
-
-
-<p>
-  <strong>Image</strong>
-  <%=image_tag(@item.image, alt: "Example Image")%>
-</p>
-
-<p>
-  <strong>Status</strong>
-  <%= @item.status%><br>
-</p>
 <%= link_to 'Back', category_path(@category)%>
+  </body>
+</hrml>
