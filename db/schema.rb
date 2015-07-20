@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 20150715120149) do
     t.integer  "minQty"
     t.integer  "maxQty"
     t.string   "sku"
+    t.binary   "image"
     t.boolean  "status"
     t.integer  "category_id"
     t.datetime "created_at",         null: false
