@@ -24,6 +24,12 @@ bundle install <br> <br>
 <h3>4. To update your schema execute following command </h3><br>
 rake db:migrate <br>
 
-<h3>5. Import project in ruby mine</h3><br>
+<h3>5. On windows install file utility.</h3> <br>
+On windows, by default file utility is not present. For saving image file we need to have this.<br>
+Download  <b>Complete package, except sources</b> from	 http://gnuwin32.sourceforge.net/packages/file.htm
+<h3>6. Import project in ruby mine</h3><br>
 Open Ruby mine <br>
 File --> open ...--> point to project directory--> click Ok
+
+<h3>7. You can start server if you wish to see by </h3> <br>
+bin/rails server
